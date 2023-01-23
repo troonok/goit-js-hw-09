@@ -1,0 +1,2 @@
+!function(){var t=document.querySelector("button[data-start]"),n=document.querySelector("button[data-stop]"),e=document.querySelector("body"),o=null,r=!1;t.addEventListener("click",(function(){if(r)return;o=setInterval((function(){r=!0;var t="#".concat(Math.floor(16777215*Math.random()).toString(16));e.style.backgroundColor=t}),1e3),console.log("najali knopku")})),n.addEventListener("click",(function(){clearInterval(o),r=!1}))}();
+//# sourceMappingURL=01-color-switcher.5ef288db.js.map

@@ -28,14 +28,3 @@ function getRandomHexColor() {
     clearInterval(timerId);
     isActive=false;
     }
-
-
-
-
-
-
-
-// stopBtn.addEventListener("click", () => {
-//   
-//   console.log(`Interval with id ${timerId} has stopped!`);
-// });

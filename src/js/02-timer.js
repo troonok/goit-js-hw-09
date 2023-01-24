@@ -1,5 +1,7 @@
 import flatpickr from "flatpickr";
 import "flatpickr/dist/flatpickr.min.css";
+import { Notify } from 'notiflix/build/notiflix-notify-aio';
+
 const tim = document.querySelector('.timer')
 const fieldData = document.querySelector('#datetime-picker');
 const checkBtn = document.querySelector('button[data-start]');
@@ -24,7 +26,7 @@ const options = {
     onClose(selectedDates) 
     {
         if(selectedDates[0]< options.defaultDate){
-        window.alert("Please choose a date in the future");
+        Notify.warning("Please choose a date in the future");
         noActiveBtn;
     }
     else{

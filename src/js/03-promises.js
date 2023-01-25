@@ -1,7 +1,7 @@
 
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
-refs = {
+const refs = {
 delay: document.forms[0].delay,
 step: document.forms[0].step,
 amount: document.forms[0].amount,

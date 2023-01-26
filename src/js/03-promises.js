@@ -39,7 +39,7 @@ function createPromise(position, delay) {
       if (shouldResolve) {
         resolve({ position, delay })
       } else {
-        reject("error");
+        reject({ position, delay });
       }
     }, delay);
   });

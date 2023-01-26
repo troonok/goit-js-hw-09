@@ -23,9 +23,9 @@ const options = {
     time_24hr: true, 
     defaultDate: new Date(),
     minuteIncrement: 1,
-    onClose(selectedDates) 
+    onClose([selectedDates]) 
     {
-        if(selectedDates[0]< Date.now()){
+        if(selectedDates < Date.now()){
         Notify.warning("Please choose a date in the future");
         noActiveBtn;
     }

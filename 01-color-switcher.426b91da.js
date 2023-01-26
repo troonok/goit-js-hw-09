@@ -1,2 +1,0 @@
-const t=document.querySelector("button[data-start]"),e=document.querySelector("button[data-stop]"),n=document.querySelector("body");let o=null,r=!1;t.addEventListener("click",(function(){if(r)return;o=setInterval((()=>{r=!0;const t=`#${Math.floor(16777215*Math.random()).toString(16)}`;n.style.backgroundColor=t}),1e3),console.log("najali knopku")})),e.addEventListener("click",(function(){clearInterval(o),r=!1}));
-//# sourceMappingURL=01-color-switcher.426b91da.js.map

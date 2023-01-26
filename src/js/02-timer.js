@@ -25,7 +25,7 @@ const options = {
     minuteIncrement: 1,
     onClose(selectedDates) 
     {
-        if(selectedDates[0]< options.defaultDate){
+        if(selectedDates[0]< Date.now()){
         Notify.warning("Please choose a date in the future");
         noActiveBtn;
     }
@@ -45,7 +45,7 @@ function startTimeout(){
     const different = deadline - Date.now(); 
     const convertTime = convertMs(different) 
     updateTimerValues(convertTime);
-    if(different <  0){
+    if(different <  1000){
         clearInterval(timerId);
         return;
     }   
